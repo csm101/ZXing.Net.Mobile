@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\layout\zxingscanneractivitylayout.axml" />
+    <None Remove="Resources\layout\zxingscannerfragmentlayout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FastAndroidCamera" Version="2.0.0" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.0.1" />
+    <PackageReference Include="ZXing.Net" Version="0.16.9" />
+  </ItemGroup>
+
+	<PropertyGroup>
+		<UseMauiEssentials>true</UseMauiEssentials>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
+</Project>
